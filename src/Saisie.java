@@ -41,14 +41,16 @@ public class Saisie {
         String lettre = "";
 
         while (true){
-            if (scan.hasNext()){          // Si la saisie est une lettre, on la récupère.
-                lettre = scan.nextLine();
-            } else {            // Sinon on coupe la boucle.
-                System.out.println("Saisie invalide, veuillez entrer une lettre");
-                break;
+            if (scan.hasNextLine()){
+                String saisie = scan.next(); // vérification de la validité de la saisie
+                if (saisie.length() == 1 && Character.isLetter(saisie.charAt(0))){ // si c'est une lettre seule, alors on la stock
+                    lettre = saisie;
+                    break;
+                } else {
+                    System.out.println("Saisie invalide, veuillez entrer une lettre");
+                }
             }
         }
         return lettre;
-
     }
 }

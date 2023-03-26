@@ -11,17 +11,12 @@ public class Pendu {
         System.out.println("Bienvenue sur le pendu, joueur 2 saissez votre nom");
         Joueur joueur2 = new Joueur(scan.nextLine());
 
-        //Math.random pour savoir qui joue et qui regarde
-        Joueur whoPlay, whoLook;
+        // On définis qui joue et qui pose le mot grace a la méthode afficherQuiCommence
+        Affichage affichage = new Affichage();
+        affichage.afficherQuiCommence(joueur1, joueur2);
 
-        if(Math.random() <= 0.5){
-            whoPlay = joueur1;
-            whoLook = joueur2;
-        } else {
-            whoPlay = joueur2;
-            whoLook = joueur1;
-        }
-        System.out.println("C'est " + whoLook.getNom() + " qui donne le mot et " + whoPlay.getNom() +" qui doit le trouver.");
+        Joueur whoPlay = affichage.whoPlay;
+        Joueur whoLook = affichage.whoLook;
 
 
         // On instancie une nouvelle saisie pour saisir et instancier par la suite un nouveau mot et son indice.
@@ -38,6 +33,14 @@ public class Pendu {
         System.out.println(whoPlay.getNom() + ", veuillez entrer une lettre :");
         String lettreSaisie = saisie.saisirLettre();
         System.out.println(lettreSaisie);
+
+        //A chaque fin de partie, on apelle la méthode afficherProchainJoueur
+        affichage.afficherProchainJoueur();
+        whoPlay = affichage.whoPlay;
+        whoLook = affichage.whoLook;
+
+        System.out.println("whoPlay = " + whoPlay.getNom());
+        System.out.println("whoLook = " + whoLook.getNom());
 
     }
 }

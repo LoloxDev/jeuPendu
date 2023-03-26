@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f69cbf4c-c387-4618-aace-352a7d246353" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="f69cbf4c-c387-4618-aace-352a7d246353" name="Changes" comment="Saisie ok, Mot ok, Joueurs ok, systeme de random ok">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Affichage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Affichage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Joueur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Joueur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pendu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pendu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Saisie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Saisie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Score.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +47,20 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Pendu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Pendu" />
+      <module name="jeuPendu" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Pendu" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,11 +70,23 @@
       <option name="presentableId" value="Default" />
       <updated>1679664588193</updated>
       <workItem from="1679664589414" duration="7239000" />
-      <workItem from="1679754560397" duration="13200000" />
+      <workItem from="1679754560397" duration="18789000" />
     </task>
+    <task id="LOCAL-00001" summary="Saisie ok, Mot ok, Joueurs ok, systeme de random ok">
+      <created>1679850625677</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679850625678</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Saisie ok, Mot ok, Joueurs ok, systeme de random ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="Saisie ok, Mot ok, Joueurs ok, systeme de random ok" />
   </component>
 </project>
