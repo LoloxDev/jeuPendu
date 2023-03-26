@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f69cbf4c-c387-4618-aace-352a7d246353" name="Changes" comment="Saisie ok, Mot ok, Joueurs ok, systeme de random ok">
+    <list default="true" id="f69cbf4c-c387-4618-aace-352a7d246353" name="Changes" comment="Mise en place de la fonction afficherQuiCommence et afficherProchainJoueur">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Affichage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Affichage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Joueur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Joueur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pendu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pendu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Saisie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Saisie.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679664588193</updated>
       <workItem from="1679664589414" duration="7239000" />
-      <workItem from="1679754560397" duration="18789000" />
+      <workItem from="1679754560397" duration="25161000" />
     </task>
     <task id="LOCAL-00001" summary="Saisie ok, Mot ok, Joueurs ok, systeme de random ok">
       <created>1679850625677</created>
@@ -79,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679850625678</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Mise en place de la fonction afficherQuiCommence et afficherProchainJoueur">
+      <created>1679859359699</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679859359699</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,6 +94,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Saisie ok, Mot ok, Joueurs ok, systeme de random ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="Saisie ok, Mot ok, Joueurs ok, systeme de random ok" />
+    <MESSAGE value="Mise en place de la fonction afficherQuiCommence et afficherProchainJoueur" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mise en place de la fonction afficherQuiCommence et afficherProchainJoueur" />
   </component>
 </project>

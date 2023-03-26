@@ -4,11 +4,24 @@ public class Affichage {
     public Affichage() {
     }
 
-
+    public void afficherLettre(String lettres, String mot) {
+        for (int i = 0; i < mot.length(); i++) {
+            boolean trouve = false;
+            for (int j = 0; j < lettres.length(); j++) {
+                if (mot.substring(i, i + 1).equals(lettres.substring(j, j + 1))) {
+                    System.out.print(mot.charAt(i)); // affiche la ou les lettres
+                    trouve = true;
+                }
+            }
+            if (!trouve) {
+                System.out.print("_"); // affiche un _ pour cacher les lettres
+            }
+        }
+        System.out.print("\n");
+    }
     public void afficherMot(){
         System.out.println("lemot");
     }
-
 
 
     public void afficherProchainJoueur(){

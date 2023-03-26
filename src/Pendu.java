@@ -26,13 +26,27 @@ public class Pendu {
         String[] motIndice = saisie.saisirMot();
 
         Mot mot = new Mot(whoLook, motIndice[0], motIndice[1]);
+        String motSaisi = mot.getMot();
 
-        System.out.println("Le mot saisi par " + whoLook.getNom() + " est : " + mot.getMot() + " et son indice est : " + mot.getIndice());
+        System.out.println("Le mot saisi par " + whoLook.getNom() + " est : " + motSaisi + " et son indice est : " + mot.getIndice());
 
+
+        // On initialise un tableau pour stocker la totalité des lettres saisies
+        String lettresSaisies = "";
+
+        //J'utilise une boucle do pour la saisie des lettres tant que whoPlay n'a pas gagné
+        while(whoPlay.estGagnant(lettresSaisies, motSaisi)){
         //On utilise la méthode saisirLettre de l'instance saisie pour demander une lettre au joueur whoPlay.
         System.out.println(whoPlay.getNom() + ", veuillez entrer une lettre :");
         String lettreSaisie = saisie.saisirLettre();
-        System.out.println(lettreSaisie);
+        System.out.println(lettreSaisie); // a Supprimer apres les test
+
+        lettresSaisies += lettreSaisie;
+
+        //Et on met le mot a jour
+        affichage.afficherLettre(lettresSaisies, motSaisi);
+        }
+
 
         //A chaque fin de partie, on apelle la méthode afficherProchainJoueur
         affichage.afficherProchainJoueur();
